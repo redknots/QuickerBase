@@ -1,7 +1,7 @@
 ![Quickerbase Logo](https://github.com/samrjones5/QuickerBase/blob/main/images/QuickerBase.png?raw=true "Quickerbase")
 # QuickerBase
 
-Chrome Extension to speed up navigation in your Quickbase apps. 
+Chrome Extension to speed up navigation in your QuickBase apps. 
 
 ## Features:
 Adds links to header for direct access to:
