@@ -9,3 +9,7 @@ Adds links to header for direct access to:
 - Table to Table Imports
 - Relationship Diagram
 - Roles Settings
+
+Field IDs are displayed on the header row of Table Reports.
+
+App Settings page labels to identify key settings.
