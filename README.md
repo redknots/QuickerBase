@@ -14,4 +14,5 @@ Field IDs are displayed on the header row of Table Reports.
 
 App Settings page labels to identify key settings.
 
-You can install the packed extension [here](https://github.com/redknots/QuickerBase/raw/main/QuickerBase.crx).
+You can install the packed extension [here](https://github.com/redknots/QuickerBase/raw/main/QuickerBase.crx.zip).
+Unzip the file, then load into a Chromium browser such as Arc or Brave.
