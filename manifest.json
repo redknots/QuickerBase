@@ -9,6 +9,7 @@
   "content_scripts": [
     {
       "js": ["scripts/content.js"],
+      "css": ["css/quickerbase.css"],
       "matches": [
         "https://*.quickbase.com/*"
       ]

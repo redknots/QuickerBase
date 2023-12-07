@@ -1,0 +1,9 @@
+th[tabindex='-1']::before {
+    content: "fid_" attr(columnid);
+    opacity: 50%;
+    font-size: x-small;
+    position: relative;
+    top: 1px;
+    line-height: .1;
+    padding-bottom: -5px !important;
+  }
