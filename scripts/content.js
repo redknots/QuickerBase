@@ -1,4 +1,4 @@
-console.log("foo")
+console.log("bar")
 async function QuickerBase() {
     
     var url = document.location.href;
@@ -6,17 +6,18 @@ async function QuickerBase() {
     
     var curDbid = (url.split("db/")[1]).split("?")[0];
     
-    var appDbid = ""
-    async function addDbibFetch() {
+    var appDbid = document.querySelector("#tblNavHome a").getAttribute("href").replace("/db/", "")
+    console.log("appdbid", appDbid)
+    /* async function addDbibFetch() {
         const response = await fetch(realm + ".quickbase.com/db/" + curDbid + "/");
         
         var appDbid = response.url
         appDbid = appDbid.split("/").slice(-1)[0]
-        console.log("appdbid", appDbid)
+        
         return appDbid
-    }
+    } */
     
-    var appDbid = await addDbibFetch()
+    // var appDbid = await addDbibFetch()
     
     function addButtons() {
     var addButt = document.getElementsByClassName(" ButtonText")

@@ -7,3 +7,20 @@ th[tabindex='-1']::before {
     line-height: .1;
     padding-bottom: -5px !important;
   }
+
+  #appSettingsNav_props + p::after {
+    content: "App Tokens";
+    display: block;
+    margin: 10px 0px;
+    opacity: 50%;
+}
+
+#appSettingsNav_manage + p::after {
+  content: "-\00a0 Reldiagram -\00a0 Copy/Transfer\00a0 App -\00a0 Copy\00a0 Master\00a0 &\00a0 Detail";
+  display: block;
+  overflow-wrap: after;
+  width: 20px;
+  opacity: 0.5;
+  border-image: initial;
+  margin: 10px 0px;
+}
