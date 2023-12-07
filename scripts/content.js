@@ -1,14 +1,14 @@
 console.log("foo")
-async function QuickerBase(AppDBID) {
+async function QuickerBase() {
     
-    var curLocation = window.location.href;
-    var realm = (curLocation.split(".")[0]) + ".quickbase.com/";
+    var url = document.location.href;
+    var realm = (url.split(".")[0]) + ".quickbase.com/";
     
-    var curDbid = (curLocation.split("db/")[1]).split("?")[0];
+    var curDbid = (url.split("db/")[1]).split("?")[0];
     
     var appDbid = ""
     async function addDbibFetch() {
-        const response = await fetch('https://quandarycg.quickbase.com/db/bsq5jdubk');
+        const response = await fetch(realm + ".quickbase.com/db/" + curDbid + "/");
         
         var appDbid = response.url
         appDbid = appDbid.split("/").slice(-1)[0]
@@ -24,11 +24,11 @@ async function QuickerBase(AppDBID) {
     var bonusLinkColor = getComputedStyle(document.getElementsByClassName(" ButtonText")[0]).color;
     
     var bonusLinksArray = [];
-    var importUrl = [curLocation.split("=")[0] + "=ImportList&dbid=" + curDbid + "&confMsg=", "Imports"];
+    var importUrl = [url.split("=")[0] + "=ImportList&dbid=" + curDbid + "&confMsg=", "Imports"];
     bonusLinksArray.push(importUrl)
-    var fieldsUrl = [curLocation.split("=")[0] + "=listfields", "Fields"];
+    var fieldsUrl = [url.split("=")[0] + "=listfields", "Fields"];
     bonusLinksArray.push(fieldsUrl)
-    var rShipUrl = [curLocation.split("=")[0] + "=Relationships", "RShips"];
+    var rShipUrl = [url.split("=")[0] + "=Relationships", "RShips"];
     bonusLinksArray.push(rShipUrl)
 
 
@@ -71,5 +71,5 @@ async function QuickerBase(AppDBID) {
 
 window.addEventListener('load', 
   
-QuickerBase(window["gReqAppDBID"]), false);
+QuickerBase(), false);
 
