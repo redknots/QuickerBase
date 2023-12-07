@@ -13,3 +13,5 @@ Adds links to header for direct access to:
 Field IDs are displayed on the header row of Table Reports.
 
 App Settings page labels to identify key settings.
+
+You can install the packed extension [here](https://github.com/redknots/QuickerBase/raw/main/QuickerBase.crx).
